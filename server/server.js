@@ -28,6 +28,8 @@ app.listen(3000,()=>{
 	console.log("Server up and running");
 });
 
+module.exports = {app};
+
 // newTodo.save().then((data)=>{
 // 	console.log('saved data' + data);
 // },(e)=>{
