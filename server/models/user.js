@@ -1,11 +1,12 @@
-// var mongoose = require('mongoose');
+var mongoose = require('mongoose');
 
-// var Todo = mongoose.model('todo',{
-// 	text : {type:String,required:true,minlength:2,trim:true},
-// 	completed : {type:Boolean,default:false},
-// 	completedAt : {type:Number,default:null}
-// });
+var User = mongoose.model('User', {
+  email: {
+    type: String,
+    required: true,
+    trim: true,
+    minlength: 1
+  }
+});
 
-// module.exports = {
-// 	newTodo
-// }
+module.exports = {User}
